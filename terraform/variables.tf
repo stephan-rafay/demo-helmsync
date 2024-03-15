@@ -3,6 +3,16 @@ variable "rafay_config_file" {
   sensitive   = true
 }
 
+variable "repo_url" {
+  description = "git url"
+  default = "https://github.com/stephan-rafay/demo-helmsync.git"
+}
+
+variable "repo_branch" {
+  description = "git branch"
+  default = "main"
+}
+
 variable "git_token" {
   description = "git token for authentication"
   sensitive   = true
