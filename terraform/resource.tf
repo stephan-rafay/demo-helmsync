@@ -7,10 +7,10 @@ resource "rafay_workload_cd_operator" "operatordemo" {
     repo_local_path = "/tmp/application-repo"
     repo_url        = "https://github.com/stephan-rafay/demo-helmsync.git"
     repo_branch     = "main"
-    credentials {
-     username = var.git_user
-     token = var.git_token
-    }
+    #credentials {
+    # username = var.git_user
+    # token = var.git_token
+    #}
 
     workload {
       name = "httpecho"
