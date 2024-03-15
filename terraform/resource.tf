@@ -6,7 +6,7 @@ resource "rafay_workload_cd_operator" "operatordemo" {
   spec {
     repo_local_path = "/tmp/application-repo"
     repo_url        = var.repo_url
-    repo_branch     = var.git_token
+    repo_branch     = var.repo_branch
     #credentials {
     # username = var.git_user
     # token = var.git_token
